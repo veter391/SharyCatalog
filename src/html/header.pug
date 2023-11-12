@@ -1,0 +1,64 @@
+header.header
+  .header__top.container
+    a(href="#").header__logo
+      picture
+        source(srcset="@img/logo.webp 1x, @img/logo@2x.webp 2x" type="image/webp")
+        img(src="@img/logo.png" srcset="@img/logo.png 1x, @img/logo@2x.png 2x" alt="image")
+
+    form.header__form#header__form(action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data")
+      label.header__label
+        input.input-reset.header__input(type="text" placeholder="...")
+      button.header__search.btn-reset
+        svg(aria-hidden="true" width="100%" height="100%")
+          use(xlink:href="img/sprite.svg#search")
+
+    a.header__landlord(href="#") Стать арендодателем
+
+    button.btn-reset.header__user(aria-label="Пользователь")
+      svg.header__person(aria-hidden="true" width="30px" height="32px")
+        use(xlink:href="img/sprite.svg#user")
+      svg.header__arrow(aria-hidden="true" width="15px" height="7.5px")
+        use(xlink:href="img/sprite.svg#arrowBottom")
+
+    button.btn-reset.burger(aria-label="Открыть меню" aria-expanded="false"  data-burger)
+      span.burger__line
+
+    //- burger navigation
+    nav.nav(data-nav)
+      ul.nav__list
+        li.nav__item
+          a.nav__link(href="#") О нас
+        li.nav__item
+          a.nav__link(href="#") Каталог
+        li.nav__item
+          a.nav__link(href="#") Как арендовать
+        li.nav__item
+          a.nav__link(href="#") Стать арендодателем
+        li.nav__item
+          a.nav__link(href="#") Контакты
+        li.nav__item
+          a.nav__link(href="#") Помощь
+
+  .header__bottom.container
+    .swiper.header__swiper
+      ul.header__list.list-reset.swiper-wrapper
+        li.header__item.swiper-slide
+          a(href="#").header__link Техника для дома
+        li.header__item.swiper-slide
+          a(href="#").header__link Аудио/видео
+        li.header__item.swiper-slide
+          a(href="#").header__link Спорт и отдых
+        li.header__item.swiper-slide
+          a(href="#").header__link Мебель/декор
+        li.header__item.swiper-slide
+          a(href="#").header__link Электроника
+        li.header__item.swiper-slide
+          a(href="#").header__link Туризм
+        li.header__item.swiper-slide
+          a(href="#").header__link Для детей и родителей
+        li.header__item.swiper-slide
+          a(href="#").header__link Техника для дома
+        li.header__item.swiper-slide
+          a(href="#").header__link Аудио/видео
+    button.btn-reset.header__nextprev.swiper-button-prev
+    button.btn-reset.header__nextprev.swiper-button-next

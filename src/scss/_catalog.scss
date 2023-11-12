@@ -1,0 +1,20 @@
+.catalog {
+  &__swiper {
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+  }
+  &__slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+    grid-gap: 32px;
+  }
+  .swiper-pagination-bullet {
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    background-color: var(--dark-theme);
+    color: var(--light-theme);
+  }
+}
