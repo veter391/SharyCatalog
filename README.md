@@ -10,6 +10,6 @@ npm run build
 ```
 
 ### Tools
-Gulp, Pug, Scss, Vanilla JS
+Gulp, Pug, Scss, Vanilla JS, PHP.
 
 [DEMO](https://veter391.github.io/SharyCatalog/)
