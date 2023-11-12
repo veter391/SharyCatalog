@@ -66,6 +66,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001561",
     "gulp-cli": "latest"
   }
 }
